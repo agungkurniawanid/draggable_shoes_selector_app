@@ -1,4 +1,4 @@
-import 'package:draggable_dragtarget/screen/main_screen.dart';
+import 'package:draggable_shoes_selector_app/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());

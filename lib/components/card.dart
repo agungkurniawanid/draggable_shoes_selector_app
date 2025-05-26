@@ -1,4 +1,4 @@
-import 'package:draggable_dragtarget/models/sandal.dart';
+import 'package:draggable_shoes_selector_app/models/sandal.dart';
 import 'package:flutter/material.dart';
 
 class CardSaya extends StatefulWidget {
@@ -29,26 +29,34 @@ class _CardSayaState extends State<CardSaya> {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                  color: const Color(0xFFE5E5E5),
-                  borderRadius: BorderRadius.circular(20.0)),
+                color: const Color(0xFFE5E5E5),
+                borderRadius: BorderRadius.circular(20.0),
+              ),
               child: Center(
-                  child: Draggable<String>(
-                data: sendal[index].foto.toString(),
-                feedback: Image(
-                  image: AssetImage("assets/${sendal[index].foto.toString()}"),
-                  width: 200,
+                child: Draggable<String>(
+                  data: sendal[index].foto.toString(),
+                  feedback: Image(
+                    image: AssetImage(
+                      "assets/${sendal[index].foto.toString()}",
+                    ),
+                    width: 200,
+                  ),
+                  childWhenDragging: Image(
+                    image: AssetImage(
+                      "assets/${sendal[index].foto.toString()}",
+                    ),
+                    width: 200,
+                  ),
+                  onDragCompleted: () =>
+                      widget.onDrag(sendal[index].foto.toString()),
+                  child: Image(
+                    image: AssetImage(
+                      "assets/${sendal[index].foto.toString()}",
+                    ),
+                    width: 200,
+                  ),
                 ),
-                childWhenDragging: Image(
-                  image: AssetImage("assets/${sendal[index].foto.toString()}"),
-                  width: 200,
-                ),
-                onDragCompleted: () =>
-                    widget.onDrag(sendal[index].foto.toString()),
-                child: Image(
-                  image: AssetImage("assets/${sendal[index].foto.toString()}"),
-                  width: 200,
-                ),
-              )),
+              ),
             );
           },
         ),

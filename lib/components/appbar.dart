@@ -25,23 +25,25 @@ class _MyAppBarState extends State<MyAppBar> {
               Text(
                 "Draggable Gambar",
                 style: GoogleFonts.poppins(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w500),
+                  fontSize: 20,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
               Text(
                 "Drag and Drop Gambar untuk\nmengganti gambar utama!",
                 style: GoogleFonts.poppins(
-                    fontSize: 14,
-                    color: Colors.black,
-                    fontWeight: FontWeight.normal),
+                  fontSize: 14,
+                  color: Colors.black,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             ],
           ),
           const Image(
             image: AssetImage("assets/nike_icon_mark.png"),
             width: 80,
-          )
+          ),
         ],
       ),
     );

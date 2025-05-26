@@ -1,6 +1,6 @@
 {
-    "name": "draggable_dragtarget",
-    "short_name": "draggable_dragtarget",
+    "name": "draggable_shoes_selector_app",
+    "short_name": "draggable_shoes_selector_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

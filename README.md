@@ -1,4 +1,4 @@
-# draggable_dragtarget
+# draggable_shoes_selector_app
 
 A new Flutter project.
 
